@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -27,18 +33,97 @@
             </ul>
         </div>
     </header>
-    <main></main>
-    <footer>
+    <main>
+        <section class="section">
+            <h1 class="hidden-elem">портфолио</h1>
+            <ul class="tabs">
+                <li class="tab"><button type="button" class="tab-btn active">Все</button></li>
+                <li class="tab"><button type="button" class="tab-btn">Веб-сайты</button></li>
+                <li class="tab"><button type="button" class="tab-btn">Приложения</button></li>
+                <li class="tab"><button type="button" class="tab-btn">Дизайн</button></li>
+                <li class="tab"><button type="button" class="tab-btn">Маркетинг</button></li>
+            </ul>
+            <div class="container">
+                <ul class="carts">
+                    <li class="cart-portfolio">
+                        <img src="./images/imade1.jpg" alt="image" class="cart-img" width="370" height="294">
+                        <div class="cart-portfolio-info">
+                            <h3 class="cart-portfolio-title">Технокряк</h3>
+                            <p class="cart-portfolio-text">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="cart-portfolio">
+                        <img src="./images/imade2.jpg" alt="image" class="cart-img" width="370" height="294">
+                        <div class="cart-portfolio-info">
+                            <h3 class="cart-portfolio-title">Постер New Orlean vs Golden Star</h3>
+                            <p class="cart-portfolio-text">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="cart-portfolio">
+                        <img src="./images/imade3.jpg" alt="image" class="cart-img" width="370" height="294">
+                        <div class="cart-portfolio-info">
+                            <h3 class="cart-portfolio-title">Постер New Orlean vs Golden Star</h3>
+                            <p class="cart-portfolio-text">Дизайн</p>
+                        </div>
+                    </li>
+
+                    <li class="cart-portfolio">
+                        <img src="./images/imade4.jpg" alt="image" class="cart-img" width="370" height="294">
+                        <div class="cart-portfolio-info">
+                            <h3 class="cart-portfolio-title">Ресторан <span lang="en">Seafood</span></h3>
+                            <p class="cart-portfolio-text">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="cart-portfolio">
+                        <img src="./images/imade5.jpg" alt="image" class="cart-img" width="370" height="294">
+                        <div class="cart-portfolio-info">
+                            <h3 class="cart-portfolio-title">Проект <span lang="en">Prime</span></h3>
+                            <p class="cart-portfolio-text">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="cart-portfolio">
+                        <img src="./images/imade6.jpg" alt="image" class="cart-img" width="370" height="294">
+                        <div class="cart-portfolio-info">
+                            <h3 class="cart-portfolio-title" lang="en">Inspiration has no Borders</h3>
+                            <p class="cart-portfolio-text">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="cart-portfolio">
+                        <img src="./images/imade7.jpg" alt="image" class="cart-img" width="370" height="294">
+                        <div class="cart-portfolio-info">
+                            <h3 class="cart-portfolio-title">Издание <span lang="en">Limited Edition</span> </h3>
+                            <p class="cart-portfolio-text">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="cart-portfolio">
+                        <img src="./images/imade8.jpg" alt="image" class="cart-img" width="370" height="294">
+                        <div class="cart-portfolio-info">
+                            <h3 class="cart-portfolio-title">Проект <span lang="en">LAB</span> </h3>
+                            <p class="cart-portfolio-text">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="cart-portfolio">
+                        <img src="./images/imade9.jpg" alt="image" class="cart-img" width="370" height="294">
+                        <div class="cart-portfolio-info">
+                            <h3 class="cart-portfolio-title" lang="en">Growing Business</h3>
+                            <p class="cart-portfolio-text">Приложение</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
         <div class="container">
             <div class="footer-left-box">
-                <a href="./index.html">Web
-                    <span>Studio</span>
+                <a href="./index.html" class="logo">Web
+                    <span class="logo-color__white">Studio</span>
                 </a>
                 <address>
-                    <ul>
-                        <li>г. Киев, пр-т Леси Украинки, 26</li>
-                        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <ul class="address-list">
+                        <li class="address-item">г. Киев, пр-т Леси Украинки, 26</li>
+                        <li class="address-item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="address-item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
