@@ -1,0 +1,38 @@
+.link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  color: $main-color;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  & svg {
+    margin-right: 10px;
+  }
+  &:hover svg use,
+  &:focus svg use,
+  &:hover,
+  &:focus {
+    color: $main-bg-c;
+    fill: $main-bg-c;
+  }
+
+  &__ikon {
+    fill: $sec-color;
+  }
+}
+.links {
+  .link {
+    margin-right: 50px;
+    text-transform: capitalize;
+  }
+}
+.contacts {
+  .link {
+    margin-left: 50px;
+    color: $sec-color;
+  }
+}

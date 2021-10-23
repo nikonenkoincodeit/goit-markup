@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--main-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+.hidden-elem {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.d-flex {
+  display: flex;
+}
+
+.nav,
+.links,
+.contacts {
+  display: flex;
+}
+
+svg,
+use {
+  transition: fill 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.section-title {
+  margin: 0 0 50px 0;
+  text-align: center;
+  line-height: 42px;
+  @include font(36px, $main-color, 1.16, bold);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}

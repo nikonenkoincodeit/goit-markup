@@ -1,0 +1,27 @@
+.favors {
+  @extend %flex-elem;
+  &-box:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-box__wrapper {
+    padding: 28px 0;
+    text-align: center;
+    background: #f5f4fa;
+    margin-bottom: 30px;
+  }
+
+  &-title {
+    @include font(14px, $sec-color, 1.1, bold);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &-text {
+    font-size: 14px;
+    line-height: 24px;
+    @include font(14px, $sec-color, 1.7);
+    letter-spacing: 0.03em;
+  }
+}
