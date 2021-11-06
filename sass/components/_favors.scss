@@ -1,7 +1,10 @@
 .favors {
-  @extend %flex-elem;
-  &-box:not(:last-child) {
-    margin-right: 30px;
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &-box__wrapper {
@@ -10,12 +13,25 @@
     background: #f5f4fa;
     margin-bottom: 30px;
   }
-
+  &-box {
+    margin-bottom: 30px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 90px) / 4);
+    }
+  }
   &-title {
-    @include font(14px, $sec-color, 1.1, bold);
+    @include font(14px, $main-color, 1.1, bold);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &-text {

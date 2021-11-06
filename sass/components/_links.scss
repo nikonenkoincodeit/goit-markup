@@ -25,14 +25,38 @@
   }
 }
 .links {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
   .link {
     margin-right: 50px;
     text-transform: capitalize;
   }
 }
 .contacts {
-  .link {
-    margin-left: 50px;
-    color: $sec-color;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    & .link {
+      margin-left: 50px;
+      color: $sec-color;
+    }
+  }
+}
+
+.contacts li:first-child a {
+  padding: 21px 0 10px 0;
+}
+
+.contacts li:last-child a {
+  padding: 0 0 21px 0;
+}
+
+.contacts li a.link {
+  padding: 31px 0;
 }

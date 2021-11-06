@@ -2,7 +2,12 @@
   font-family: "Raleway", sans-serif;
   display: flex;
   align-items: center;
-  margin-right: 93px;
+
+  margin-right: 88px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
