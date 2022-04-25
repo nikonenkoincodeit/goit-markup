@@ -8,3 +8,4 @@ function updateClassWrapper() {
 
 heroBtnRef.addEventListener("click", updateClassWrapper);
 modalCloseRef.addEventListener("click", updateClassWrapper);
+console.log("1111111 :>> ", 1111111);
